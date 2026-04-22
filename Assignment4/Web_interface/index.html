@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IPFS File Upload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📦 IPFS File Upload</h1>
+  <p class="subtitle">Upload your files to decentralized storage</p>
+
+  <div class="card">
+    <input type="file" id="fileInput" />
+    
+    <button onclick="uploadFile()">Upload to IPFS</button>
+
+    <div class="result">
+      <p><strong>CID:</strong> <span id="cid">Not uploaded yet</span></p>
+      <a id="fileLink" target="_blank" style="display:none;"></a>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
